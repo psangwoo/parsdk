@@ -9,12 +9,12 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/simapp"
 	"github.com/cosmos/cosmos-sdk/testutil"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
 	banktypes "github.com/psangwoo/parsdk/x/bank/types"
 	"github.com/psangwoo/parsdk/x/genutil/client/cli"
 	stakingcli "github.com/psangwoo/parsdk/x/staking/client/cli"

@@ -3,7 +3,7 @@ package client
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/psangwoo/parsdk/client"
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/psangwoo/parsdk/x/evidence/client/rest"
 )
 

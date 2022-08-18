@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	ibcv100 "github.com/cosmos/ibc-go/v2/modules/core/legacy/v100"
 	"github.com/pkg/errors"
-	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/genutil/types"
 	"github.com/spf13/cobra"
 	tmjson "github.com/tendermint/tendermint/libs/json"

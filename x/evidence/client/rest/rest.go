@@ -3,8 +3,8 @@ package rest
 import (
 	"net/http"
 
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/rest"
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/rest"
 
 	"github.com/gorilla/mux"
 )

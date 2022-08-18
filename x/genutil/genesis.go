@@ -3,8 +3,8 @@ package genutil
 import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/genutil/types"
 )
 

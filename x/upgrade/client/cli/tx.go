@@ -3,9 +3,9 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/tx"
 	"github.com/psangwoo/parsdk/x/gov/client/cli"
 	gov "github.com/psangwoo/parsdk/x/gov/types"
 	"github.com/psangwoo/parsdk/x/upgrade/types"

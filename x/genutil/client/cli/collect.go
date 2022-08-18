@@ -8,9 +8,9 @@ import (
 	"github.com/spf13/cobra"
 	tmtypes "github.com/tendermint/tendermint/types"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
 	"github.com/psangwoo/parsdk/x/genutil"
 	"github.com/psangwoo/parsdk/x/genutil/types"
 )

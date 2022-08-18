@@ -6,9 +6,9 @@ import (
 
 	"github.com/gorilla/mux"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
 	authtx "github.com/psangwoo/parsdk/x/auth/tx"
 	"github.com/psangwoo/parsdk/x/staking/types"
 )

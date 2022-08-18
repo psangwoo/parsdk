@@ -6,9 +6,9 @@ import (
 
 	"github.com/gorilla/mux"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/tx"
 	gcutils "github.com/psangwoo/parsdk/x/gov/client/utils"
 	"github.com/psangwoo/parsdk/x/gov/types"
 )

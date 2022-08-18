@@ -3,9 +3,9 @@ package utils
 import (
 	"fmt"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/psangwoo/parsdk/client"
 	authtx "github.com/psangwoo/parsdk/x/auth/tx"
 	"github.com/psangwoo/parsdk/x/gov/types"
 )

@@ -8,11 +8,11 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/auth/keeper"
 	"github.com/psangwoo/parsdk/x/auth/vesting/client/cli"
 	"github.com/psangwoo/parsdk/x/auth/vesting/types"

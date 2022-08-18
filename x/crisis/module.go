@@ -10,12 +10,12 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/crisis/client/cli"
 	"github.com/psangwoo/parsdk/x/crisis/keeper"
 	"github.com/psangwoo/parsdk/x/crisis/types"

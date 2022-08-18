@@ -12,13 +12,13 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/capability/keeper"
 	"github.com/psangwoo/parsdk/x/capability/simulation"
 	"github.com/psangwoo/parsdk/x/capability/types"

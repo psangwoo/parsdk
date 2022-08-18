@@ -7,8 +7,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/auth/signing"
 )
 

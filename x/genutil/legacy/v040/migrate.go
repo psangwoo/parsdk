@@ -1,8 +1,8 @@
 package v040
 
 import (
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/psangwoo/parsdk/client"
 	v039auth "github.com/psangwoo/parsdk/x/auth/legacy/v039"
 	v040auth "github.com/psangwoo/parsdk/x/auth/legacy/v040"
 	v036supply "github.com/psangwoo/parsdk/x/bank/legacy/v036"

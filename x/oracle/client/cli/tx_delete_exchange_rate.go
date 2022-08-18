@@ -5,9 +5,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
-	"github.com/psangwoo/parsdk/client/tx"
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/psangwoo/parsdk/x/oracle/types"
 )
 

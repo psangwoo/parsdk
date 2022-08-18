@@ -11,13 +11,13 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	sdkclient "github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	sdkclient "github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/feegrant"
 	"github.com/psangwoo/parsdk/x/feegrant/client/cli"
 	"github.com/psangwoo/parsdk/x/feegrant/keeper"

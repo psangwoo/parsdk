@@ -3,11 +3,11 @@ package testutil
 import (
 	"fmt"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/testutil"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
 	stakingcli "github.com/psangwoo/parsdk/x/staking/client/cli"
 )
 

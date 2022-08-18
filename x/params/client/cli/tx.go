@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/tx"
 	govtypes "github.com/psangwoo/parsdk/x/gov/types"
 	paramscutils "github.com/psangwoo/parsdk/x/params/client/utils"
 	paramproposal "github.com/psangwoo/parsdk/x/params/types/proposal"

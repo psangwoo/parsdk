@@ -16,12 +16,12 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 	"github.com/tendermint/tendermint/types"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/client/input"
 	"github.com/cosmos/cosmos-sdk/server"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
-	"github.com/psangwoo/parsdk/client/input"
 	"github.com/psangwoo/parsdk/x/genutil"
 )
 

@@ -16,9 +16,9 @@ import (
 	cfg "github.com/tendermint/tendermint/config"
 	tmtypes "github.com/tendermint/tendermint/types"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/psangwoo/parsdk/client"
 	bankexported "github.com/psangwoo/parsdk/x/bank/exported"
 	"github.com/psangwoo/parsdk/x/genutil/types"
 	stakingtypes "github.com/psangwoo/parsdk/x/staking/types"

@@ -5,10 +5,10 @@ import (
 
 	"github.com/gorilla/mux"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	clientrest "github.com/cosmos/cosmos-sdk/client/rest"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
-	clientrest "github.com/psangwoo/parsdk/client/rest"
-	"github.com/psangwoo/parsdk/client/tx"
 	"github.com/psangwoo/parsdk/x/distribution/types"
 	govrest "github.com/psangwoo/parsdk/x/gov/client/rest"
 	govtypes "github.com/psangwoo/parsdk/x/gov/types"

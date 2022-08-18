@@ -7,8 +7,8 @@ import (
 
 	"github.com/gorilla/mux"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/upgrade/types"
 )
 

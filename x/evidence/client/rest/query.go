@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/x/evidence/types"
 
 	"github.com/gorilla/mux"

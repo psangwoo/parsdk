@@ -7,11 +7,11 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
-	"github.com/psangwoo/parsdk/client/tx"
 	govutils "github.com/psangwoo/parsdk/x/gov/client/utils"
 	"github.com/psangwoo/parsdk/x/gov/types"
 )

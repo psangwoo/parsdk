@@ -5,7 +5,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/psangwoo/parsdk/client"
+	"github.com/cosmos/cosmos-sdk/client"
 	distrcli "github.com/psangwoo/parsdk/x/distribution/client/cli"
 )
 

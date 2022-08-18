@@ -8,10 +8,10 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/types/query"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
 	"github.com/psangwoo/parsdk/x/evidence/types"
 )
 

@@ -9,11 +9,11 @@ import (
 	"github.com/tendermint/tendermint/libs/cli"
 	"github.com/tendermint/tendermint/libs/log"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/server"
 	"github.com/cosmos/cosmos-sdk/testutil"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/psangwoo/parsdk/client"
 	genutilcli "github.com/psangwoo/parsdk/x/genutil/client/cli"
 )
 

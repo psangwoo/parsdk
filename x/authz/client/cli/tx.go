@@ -8,11 +8,11 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
-	"github.com/psangwoo/parsdk/client/tx"
 	authclient "github.com/psangwoo/parsdk/x/auth/client"
 	"github.com/psangwoo/parsdk/x/authz"
 	bank "github.com/psangwoo/parsdk/x/bank/types"

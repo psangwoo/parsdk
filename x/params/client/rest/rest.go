@@ -3,9 +3,9 @@ package rest
 import (
 	"net/http"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/tx"
 	govrest "github.com/psangwoo/parsdk/x/gov/client/rest"
 	govtypes "github.com/psangwoo/parsdk/x/gov/types"
 	paramscutils "github.com/psangwoo/parsdk/x/params/client/utils"

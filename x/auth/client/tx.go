@@ -11,13 +11,13 @@ import (
 
 	"github.com/gogo/protobuf/jsonpb"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/tx"
 	"github.com/psangwoo/parsdk/x/auth/legacy/legacytx"
 )
 

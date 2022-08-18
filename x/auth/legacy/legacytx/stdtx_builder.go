@@ -3,11 +3,11 @@ package legacytx
 import (
 	"fmt"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/psangwoo/parsdk/client"
 	authsigning "github.com/psangwoo/parsdk/x/auth/signing"
 )
 

@@ -3,15 +3,15 @@ package rest
 import (
 	"net/http"
 
-	"github.com/psangwoo/parsdk/client/tx"
+	"github.com/cosmos/cosmos-sdk/client/tx"
 
 	"github.com/gorilla/mux"
 
 	govrest "github.com/psangwoo/parsdk/x/gov/client/rest"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
 	govtypes "github.com/psangwoo/parsdk/x/gov/types"
 	"github.com/psangwoo/parsdk/x/upgrade/types"
 )

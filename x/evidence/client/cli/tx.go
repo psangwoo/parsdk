@@ -1,7 +1,7 @@
 package cli
 
 import (
-	"github.com/psangwoo/parsdk/client"
+	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/psangwoo/parsdk/x/evidence/types"
 
 	"github.com/spf13/cobra"

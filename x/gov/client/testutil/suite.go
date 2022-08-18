@@ -11,10 +11,10 @@ import (
 
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
+	"github.com/cosmos/cosmos-sdk/client/flags"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/psangwoo/parsdk/client/flags"
 	"github.com/psangwoo/parsdk/x/gov/client/cli"
 	"github.com/psangwoo/parsdk/x/gov/types"
 )

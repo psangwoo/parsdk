@@ -1,7 +1,7 @@
 package rest
 
 import (
-	"github.com/psangwoo/parsdk/client"
+	"github.com/cosmos/cosmos-sdk/client"
 
 	"github.com/gorilla/mux"
 )

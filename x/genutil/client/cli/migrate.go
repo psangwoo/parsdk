@@ -10,10 +10,10 @@ import (
 	"github.com/spf13/cobra"
 	tmjson "github.com/tendermint/tendermint/libs/json"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/cosmos/cosmos-sdk/client/flags"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/psangwoo/parsdk/client"
-	"github.com/psangwoo/parsdk/client/flags"
 	v040 "github.com/psangwoo/parsdk/x/genutil/legacy/v040"
 	v043 "github.com/psangwoo/parsdk/x/genutil/legacy/v043"
 	"github.com/psangwoo/parsdk/x/genutil/types"

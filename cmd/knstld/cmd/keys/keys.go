@@ -1,7 +1,7 @@
 package keys
 
 import (
-	"github.com/psangwoo/parsdk/client/flags"
+	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
 )
 

@@ -6,10 +6,10 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
-	clienttx "github.com/psangwoo/parsdk/client/tx"
 	"github.com/psangwoo/parsdk/x/auth/legacy/legacytx"
 	"github.com/psangwoo/parsdk/x/auth/signing"
 )

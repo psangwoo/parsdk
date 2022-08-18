@@ -1,7 +1,7 @@
 package v043
 
 import (
-	"github.com/psangwoo/parsdk/client"
+	"github.com/cosmos/cosmos-sdk/client"
 	v040bank "github.com/psangwoo/parsdk/x/bank/legacy/v040"
 	v043bank "github.com/psangwoo/parsdk/x/bank/legacy/v043"
 	bank "github.com/psangwoo/parsdk/x/bank/types"

@@ -8,11 +8,11 @@ import (
 
 	"github.com/gorilla/mux"
 
+	"github.com/cosmos/cosmos-sdk/client"
+	clientrest "github.com/cosmos/cosmos-sdk/client/rest"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
-	clientrest "github.com/psangwoo/parsdk/client/rest"
 	authtx "github.com/psangwoo/parsdk/x/auth/tx"
 	"github.com/psangwoo/parsdk/x/auth/types"
 	genutilrest "github.com/psangwoo/parsdk/x/genutil/client/rest"

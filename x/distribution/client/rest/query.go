@@ -9,9 +9,9 @@ import (
 	"github.com/psangwoo/parsdk/x/distribution/client/common"
 	"github.com/psangwoo/parsdk/x/distribution/types"
 
+	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/psangwoo/parsdk/client"
 )
 
 func registerQueryRoutes(clientCtx client.Context, r *mux.Router) {
