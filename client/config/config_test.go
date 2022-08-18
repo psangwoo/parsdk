@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/require"
 
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
 	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/client/config"
 	"github.com/psangwoo/parsdk/client/flags"
+	"github.com/psangwoo/parsdk/x/staking/client/cli"
 )
 
 const (

@@ -1,3 +1,4 @@
+//go:build norace
 // +build norace
 
 package client_test
@@ -15,7 +16,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/testdata"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	banktypes "github.com/psangwoo/parsdk/x/bank/types"
 )
 
 type IntegrationTestSuite struct {

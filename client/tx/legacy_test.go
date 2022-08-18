@@ -12,11 +12,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/testdata"
 	"github.com/cosmos/cosmos-sdk/types"
 	signing2 "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/psangwoo/parsdk/client"
 	tx2 "github.com/psangwoo/parsdk/client/tx"
+	"github.com/psangwoo/parsdk/x/auth/legacy/legacytx"
+	"github.com/psangwoo/parsdk/x/auth/tx"
+	banktypes "github.com/psangwoo/parsdk/x/bank/types"
 )
 
 const (

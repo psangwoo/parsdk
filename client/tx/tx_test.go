@@ -15,10 +15,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/client/tx"
+	"github.com/psangwoo/parsdk/x/auth/signing"
+	banktypes "github.com/psangwoo/parsdk/x/bank/types"
 )
 
 func NewTestTxConfig() client.TxConfig {

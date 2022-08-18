@@ -18,10 +18,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/rest"
 	"github.com/cosmos/cosmos-sdk/types/tx"
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
 	"github.com/psangwoo/parsdk/client"
 	"github.com/psangwoo/parsdk/client/flags"
 	"github.com/psangwoo/parsdk/client/input"
+	authsigning "github.com/psangwoo/parsdk/x/auth/signing"
 )
 
 // GenerateOrBroadcastTxCLI will either generate and print and unsigned transaction
