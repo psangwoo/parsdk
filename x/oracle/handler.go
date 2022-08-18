@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/konstellation/konstellation/x/oracle/keeper"
-	"github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/x/oracle/keeper"
+	"github.com/psangwoo/parsdk/x/oracle/types"
 )
 
 // NewHandler ...

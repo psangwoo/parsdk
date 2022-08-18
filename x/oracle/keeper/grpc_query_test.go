@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/konstellation/konstellation/app"
-	"github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/app"
+	"github.com/psangwoo/parsdk/x/oracle/types"
 	"github.com/stretchr/testify/suite"
 )
 

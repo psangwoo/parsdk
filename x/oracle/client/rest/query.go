@@ -2,8 +2,9 @@ package rest
 
 import (
 	"fmt"
-	"github.com/konstellation/konstellation/x/oracle/types"
 	"net/http"
+
+	"github.com/psangwoo/parsdk/x/oracle/types"
 
 	"github.com/gorilla/mux"
 

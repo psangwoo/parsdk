@@ -2,11 +2,12 @@ package cli
 
 import (
 	"fmt"
+
 	"github.com/spf13/cobra"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/x/oracle/types"
 )
 
 // GetTxCmd returns the transaction commands for this module

@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/x/oracle/types"
 )
 
 func (k Keeper) SetTestAllowedAddresses(ctx sdk.Context, addrs []types.AdminAddr) error {

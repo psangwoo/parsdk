@@ -11,7 +11,7 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	tmdb "github.com/tendermint/tm-db"
 
-	"github.com/konstellation/konstellation/app"
+	"github.com/psangwoo/parsdk/app"
 )
 
 // New creates application instance with in-memory database and disabled logging.

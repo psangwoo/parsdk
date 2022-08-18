@@ -4,9 +4,9 @@ import (
 	"os"
 
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/konstellation/konstellation/app"
-	"github.com/konstellation/konstellation/cmd/knstld/cmd/ibc"
-	"github.com/konstellation/konstellation/cmd/knstld/cmd/keys"
+	"github.com/psangwoo/parsdk/app"
+	"github.com/psangwoo/parsdk/cmd/knstld/cmd/ibc"
+	"github.com/psangwoo/parsdk/cmd/knstld/cmd/keys"
 	"github.com/tendermint/spm/cosmoscmd"
 )
 

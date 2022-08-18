@@ -3,8 +3,7 @@ package types
 import (
 	"time"
 
-	"cosmossdk.io/math"
-	"sigs.k8s.io/yaml"
+	yaml "gopkg.in/yaml.v2"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
@@ -55,7 +54,7 @@ func (cr CommissionRates) Validate() error {
 		// max rate cannot be negative
 		return ErrCommissionNegative
 
-	case cr.MaxRate.GT(math.LegacyOneDec()):
+	case cr.MaxRate.GT(sdk.OneDec()):
 		// max rate cannot be greater than 1
 		return ErrCommissionHuge
 

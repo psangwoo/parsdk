@@ -7,11 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"cosmossdk.io/math"
-
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/kv"
 )
 
 const (
@@ -20,6 +17,9 @@ const (
 
 	// StoreKey is the string store representation
 	StoreKey = ModuleName
+
+	// QuerierRoute is the querier route for the staking module
+	QuerierRoute = ModuleName
 
 	// RouterKey is the msg router key for the staking module
 	RouterKey = ModuleName
@@ -47,8 +47,6 @@ var (
 	ValidatorQueueKey    = []byte{0x43} // prefix for the timestamps in validator queue
 
 	HistoricalInfoKey = []byte{0x50} // prefix for the historical info
-
-	ParamsKey = []byte{0x51} // prefix for parameters for module x/staking
 )
 
 // GetValidatorKey creates the key for the validator with address
@@ -65,13 +63,11 @@ func GetValidatorByConsAddrKey(addr sdk.ConsAddress) []byte {
 
 // AddressFromValidatorsKey creates the validator operator address from ValidatorsKey
 func AddressFromValidatorsKey(key []byte) []byte {
-	kv.AssertKeyAtLeastLength(key, 3)
 	return key[2:] // remove prefix bytes and address length
 }
 
 // AddressFromLastValidatorPowerKey creates the validator operator address from LastValidatorPowerKey
 func AddressFromLastValidatorPowerKey(key []byte) []byte {
-	kv.AssertKeyAtLeastLength(key, 3)
 	return key[2:] // remove prefix bytes and address length
 }
 
@@ -79,7 +75,7 @@ func AddressFromLastValidatorPowerKey(key []byte) []byte {
 // Power index is the key used in the power-store, and represents the relative
 // power ranking of the validator.
 // VALUE: validator operator address ([]byte)
-func GetValidatorsByPowerIndexKey(validator Validator, powerReduction math.Int) []byte {
+func GetValidatorsByPowerIndexKey(validator Validator, powerReduction sdk.Int) []byte {
 	// NOTE the address doesn't need to be stored because counter bytes must always be different
 	// NOTE the larger values are of higher value
 
@@ -200,13 +196,10 @@ func GetUBDByValIndexKey(delAddr sdk.AccAddress, valAddr sdk.ValAddress) []byte 
 
 // GetUBDKeyFromValIndexKey rearranges the ValIndexKey to get the UBDKey
 func GetUBDKeyFromValIndexKey(indexKey []byte) []byte {
-	kv.AssertKeyAtLeastLength(indexKey, 2)
 	addrs := indexKey[1:] // remove prefix bytes
 
 	valAddrLen := addrs[0]
-	kv.AssertKeyAtLeastLength(addrs, 2+int(valAddrLen))
 	valAddr := addrs[1 : 1+valAddrLen]
-	kv.AssertKeyAtLeastLength(addrs, 3+int(valAddrLen))
 	delAddr := addrs[valAddrLen+2:]
 
 	return GetUBDKey(delAddr, valAddr)
@@ -280,16 +273,12 @@ func GetREDByValDstIndexKey(delAddr sdk.AccAddress, valSrcAddr, valDstAddr sdk.V
 // GetREDKeyFromValSrcIndexKey rearranges the ValSrcIndexKey to get the REDKey
 func GetREDKeyFromValSrcIndexKey(indexKey []byte) []byte {
 	// note that first byte is prefix byte, which we remove
-	kv.AssertKeyAtLeastLength(indexKey, 2)
 	addrs := indexKey[1:]
 
 	valSrcAddrLen := addrs[0]
-	kv.AssertKeyAtLeastLength(addrs, int(valSrcAddrLen)+2)
 	valSrcAddr := addrs[1 : valSrcAddrLen+1]
 	delAddrLen := addrs[valSrcAddrLen+1]
-	kv.AssertKeyAtLeastLength(addrs, int(valSrcAddrLen)+int(delAddrLen)+2)
 	delAddr := addrs[valSrcAddrLen+2 : valSrcAddrLen+2+delAddrLen]
-	kv.AssertKeyAtLeastLength(addrs, int(valSrcAddrLen)+int(delAddrLen)+4)
 	valDstAddr := addrs[valSrcAddrLen+delAddrLen+3:]
 
 	return GetREDKey(delAddr, valSrcAddr, valDstAddr)
@@ -298,16 +287,12 @@ func GetREDKeyFromValSrcIndexKey(indexKey []byte) []byte {
 // GetREDKeyFromValDstIndexKey rearranges the ValDstIndexKey to get the REDKey
 func GetREDKeyFromValDstIndexKey(indexKey []byte) []byte {
 	// note that first byte is prefix byte, which we remove
-	kv.AssertKeyAtLeastLength(indexKey, 2)
 	addrs := indexKey[1:]
 
 	valDstAddrLen := addrs[0]
-	kv.AssertKeyAtLeastLength(addrs, int(valDstAddrLen)+2)
 	valDstAddr := addrs[1 : valDstAddrLen+1]
 	delAddrLen := addrs[valDstAddrLen+1]
-	kv.AssertKeyAtLeastLength(addrs, int(valDstAddrLen)+int(delAddrLen)+3)
 	delAddr := addrs[valDstAddrLen+2 : valDstAddrLen+2+delAddrLen]
-	kv.AssertKeyAtLeastLength(addrs, int(valDstAddrLen)+int(delAddrLen)+4)
 	valSrcAddr := addrs[valDstAddrLen+delAddrLen+3:]
 
 	return GetREDKey(delAddr, valSrcAddr, valDstAddr)

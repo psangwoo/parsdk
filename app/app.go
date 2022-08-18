@@ -84,15 +84,16 @@ import (
 	porttypes "github.com/cosmos/ibc-go/v2/modules/core/05-port/types"
 	ibchost "github.com/cosmos/ibc-go/v2/modules/core/24-host"
 	ibckeeper "github.com/cosmos/ibc-go/v2/modules/core/keeper"
-	"github.com/konstellation/konstellation/docs"
+	"github.com/psangwoo/parsdk/docs"
 	tmjson "github.com/tendermint/tendermint/libs/json"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 	"github.com/CosmWasm/wasmd/x/wasm"
 	wasmclient "github.com/CosmWasm/wasmd/x/wasm/client"
-	"github.com/konstellation/konstellation/x/oracle"
-	oraclekeeper "github.com/konstellation/konstellation/x/oracle/keeper"
-	oracletypes "github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/x/oracle"
+	oraclekeeper "github.com/psangwoo/parsdk/x/oracle/keeper"
+	oracletypes "github.com/psangwoo/parsdk/x/oracle/types"
 
 	"github.com/tendermint/spm-extras/wasmcmd"
 	"github.com/tendermint/spm/cosmoscmd"

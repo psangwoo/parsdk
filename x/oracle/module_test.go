@@ -1,9 +1,10 @@
 package oracle_test
 
 import (
-	"github.com/konstellation/konstellation/const"
 	"os"
 	"testing"
+
+	_const "github.com/psangwoo/parsdk/const"
 )
 
 func TestMain(m *testing.M) {

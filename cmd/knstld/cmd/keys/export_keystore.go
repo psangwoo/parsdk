@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/konstellation/konstellation/crypto/keystore"
+	"github.com/psangwoo/parsdk/crypto/keystore"
 	"github.com/spf13/cobra"
 )
 

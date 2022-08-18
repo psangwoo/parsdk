@@ -4,7 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/konstellation/konstellation/x/oracle/client/rest"
+
+	"github.com/psangwoo/parsdk/x/oracle/client/rest"
 
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
@@ -17,9 +18,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/konstellation/konstellation/x/oracle/client/cli"
-	"github.com/konstellation/konstellation/x/oracle/keeper"
-	"github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/x/oracle/client/cli"
+	"github.com/psangwoo/parsdk/x/oracle/keeper"
+	"github.com/psangwoo/parsdk/x/oracle/types"
 	// this line is used by starport scaffolding # ibc/module/import
 )
 

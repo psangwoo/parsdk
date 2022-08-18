@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/x/oracle/types"
 )
 
 var _ types.QueryServer = Keeper{}

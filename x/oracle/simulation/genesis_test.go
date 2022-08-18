@@ -11,8 +11,8 @@ import (
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/konstellation/konstellation/x/oracle/simulation"
-	"github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/x/oracle/simulation"
+	"github.com/psangwoo/parsdk/x/oracle/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

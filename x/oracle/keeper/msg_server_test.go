@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/konstellation/konstellation/x/oracle/types"
+	"github.com/psangwoo/parsdk/x/oracle/types"
 )
 
 func setupMsgServer(t testing.TB) (types.MsgServer, context.Context) {

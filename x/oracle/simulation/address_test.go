@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/konstellation/konstellation/x/oracle/simulation"
+	"github.com/psangwoo/parsdk/x/oracle/simulation"
 )
 
 func TestNewQuerier(t *testing.T) {
