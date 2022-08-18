@@ -3,12 +3,12 @@ package keys
 import (
 	"bufio"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/input"
 	"github.com/cosmos/cosmos-sdk/crypto"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/psangwoo/parsdk/client"
+	"github.com/psangwoo/parsdk/client/flags"
+	"github.com/psangwoo/parsdk/client/input"
 	"github.com/psangwoo/parsdk/crypto/keystore"
 	"github.com/spf13/cobra"
 )

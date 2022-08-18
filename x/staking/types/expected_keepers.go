@@ -2,7 +2,7 @@ package types
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	authtypes "github.com/psangwoo/parsdk/x/auth/types"
 )
 
 // DistributionKeeper expected distribution keeper (noalias)

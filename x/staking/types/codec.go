@@ -6,7 +6,7 @@ import (
 	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/msgservice"
-	"github.com/cosmos/cosmos-sdk/x/authz"
+	"github.com/psangwoo/parsdk/x/authz"
 )
 
 // RegisterLegacyAminoCodec registers the necessary x/staking interfaces and concrete types

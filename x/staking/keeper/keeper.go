@@ -7,8 +7,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	paramtypes "github.com/psangwoo/parsdk/x/params/types"
+	"github.com/psangwoo/parsdk/x/staking/types"
 )
 
 // Implements ValidatorSet interface

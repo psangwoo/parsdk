@@ -6,7 +6,7 @@ import (
 	"encoding/binary"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	v040auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v040"
+	v040auth "github.com/psangwoo/parsdk/x/auth/legacy/v040"
 )
 
 const (

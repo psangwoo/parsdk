@@ -2,8 +2,8 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/psangwoo/parsdk/x/distribution/types"
+	stakingtypes "github.com/psangwoo/parsdk/x/staking/types"
 )
 
 // Wrapper struct

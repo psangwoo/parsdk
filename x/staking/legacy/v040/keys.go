@@ -10,8 +10,8 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	v040auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v040"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	v040auth "github.com/psangwoo/parsdk/x/auth/legacy/v040"
+	"github.com/psangwoo/parsdk/x/staking/types"
 )
 
 const (

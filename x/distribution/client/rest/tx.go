@@ -5,12 +5,12 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/cosmos/cosmos-sdk/x/distribution/client/common"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/psangwoo/parsdk/client"
+	"github.com/psangwoo/parsdk/client/tx"
+	"github.com/psangwoo/parsdk/x/distribution/client/common"
+	"github.com/psangwoo/parsdk/x/distribution/types"
 )
 
 type (

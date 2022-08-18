@@ -9,7 +9,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/psangwoo/parsdk/x/oracle/types"
 
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	paramtypes "github.com/psangwoo/parsdk/x/params/types"
 )
 
 type (
