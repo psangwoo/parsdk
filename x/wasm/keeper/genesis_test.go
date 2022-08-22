@@ -30,8 +30,8 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/psangwoo/parsdk/x/wasm/types"
-	wasmTypes "github.com/psangwoo/parsdk/x/wasm/types"
+	"github.com/CosmWasm/wasmd/x/wasm/types"
+	wasmTypes "github.com/CosmWasm/wasmd/x/wasm/types"
 )
 
 const firstCodeID = 1

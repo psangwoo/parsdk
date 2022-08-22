@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/psangwoo/parsdk/x/wasm/types"
+	"github.com/CosmWasm/wasmd/x/wasm/types"
 )
 
 const (

@@ -10,7 +10,7 @@ import (
 
 	channeltypes "github.com/cosmos/ibc-go/v2/modules/core/04-channel/types"
 
-	"github.com/psangwoo/parsdk/x/wasm/types"
+	"github.com/CosmWasm/wasmd/x/wasm/types"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"

@@ -39,7 +39,7 @@ import (
 	tmversion "github.com/tendermint/tendermint/version"
 
 	wasmd "github.com/CosmWasm/wasmd/app"
-	"github.com/psangwoo/parsdk/x/wasm"
+	"github.com/CosmWasm/wasmd/x/wasm"
 )
 
 // TestChain is a testing struct that wraps a simapp with the last TM Header, the current ABCI

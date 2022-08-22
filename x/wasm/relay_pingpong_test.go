@@ -17,10 +17,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	wasmibctesting "github.com/psangwoo/parsdk/x/wasm/ibctesting"
-	wasmkeeper "github.com/psangwoo/parsdk/x/wasm/keeper"
-	"github.com/psangwoo/parsdk/x/wasm/keeper/wasmtesting"
-	wasmtypes "github.com/psangwoo/parsdk/x/wasm/types"
+	wasmibctesting "github.com/CosmWasm/wasmd/x/wasm/ibctesting"
+	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
+	"github.com/CosmWasm/wasmd/x/wasm/keeper/wasmtesting"
+	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
 )
 
 const (

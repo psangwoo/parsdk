@@ -1,33 +1,35 @@
-# ----------------------------------------------------------------------
-# Building environment
-# ----------------------------------------------------------------------
+# docker build . -t cosmwasm/wasmd:latest
+# docker run --rm -it cosmwasm/wasmd:latest /bin/sh
+FROM golang:1.17-alpine3.15 AS go-builder
 
-FROM golang:1.17.5-alpine AS go-builder
-
-# Set up dependencies
+# this comes from standard alpine nightly file
+#  https://github.com/rust-lang/docker-rust-nightly/blob/master/alpine3.12/Dockerfile
+# with some changes to support our toolchain, etc
 RUN set -eux; apk add --no-cache ca-certificates build-base;
-RUN apk add --no-cache make gcc git libc-dev bash linux-headers eudev-dev
+
+RUN apk add git
 # NOTE: add these to run with LEDGER_ENABLED=true
 # RUN apk add libusb-dev linux-headers
-
-# Add env variable
-ENV GOBIN /go/bin
 
 WORKDIR /code
 COPY . /code/
 
-
 # See https://github.com/CosmWasm/wasmvm/releases
-ADD https://github.com/CosmWasm/wasmvm/releases/download/v1.0.0-beta3/libwasmvm_muslc.a /lib/libwasmvm_muslc.a
-RUN sha256sum /lib/libwasmvm_muslc.a | grep eba8d0a12005e1a941168299f0e16fbd6f4a93ae02491e3e1d1a7718dcf49c6e
+ADD https://github.com/CosmWasm/wasmvm/releases/download/v1.0.0-beta7/libwasmvm_muslc.a /lib/libwasmvm_muslc.a
+RUN sha256sum /lib/libwasmvm_muslc.a | grep d0152067a5609bfdfb3f0d5d6c0f2760f79d5f2cd7fd8513cafa9932d22eb350
 
+# force it to use static lib (from above) not standard libgo_cosmwasm.so file
 RUN LEDGER_ENABLED=false BUILD_TAGS=muslc make build
 
-# ----------------------------------------------------------------------
-# Running environment
-# ----------------------------------------------------------------------
+# --------------------------------------------------------
+FROM alpine:3.15
 
-FROM ubuntu:18.04
+COPY --from=go-builder /code/build/wasmd /usr/bin/wasmd
+
+COPY docker/* /opt/
+RUN chmod +x /opt/*.sh
+
+WORKDIR /opt
 
 # rest server
 EXPOSE 1317
@@ -35,25 +37,5 @@ EXPOSE 1317
 EXPOSE 26656
 # tendermint rpc
 EXPOSE 26657
-# metrics port
-EXPOSE 26660
-# grpc port
-EXPOSE 9090
 
-#RUN apt update && \
-#    apt install -y iputils-ping net-tools vim curl wget musl-dev netcat && \
-#    apt clean && apt autoclean
-
-# Bash: konstellation: No such file or directory
-# ldd /usr/local/bin/konstellation
-# libc.musl-x86_64.so.1 => not found
-#RUN ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
-
-COPY --from=go-builder /code/build/knstld /usr/bin/knstld
-
-COPY docker/* /opt/
-RUN chmod +x /opt/*.sh
-
-WORKDIR /opt
-
-CMD ["/usr/bin/knstld", "version"]
+CMD ["/usr/bin/wasmd", "version"]

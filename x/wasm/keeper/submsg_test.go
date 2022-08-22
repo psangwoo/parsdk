@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/psangwoo/parsdk/x/wasm/types"
+	"github.com/CosmWasm/wasmd/x/wasm/types"
 
 	"github.com/stretchr/testify/assert"
 

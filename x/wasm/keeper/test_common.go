@@ -68,8 +68,8 @@ import (
 
 	wasmappparams "github.com/CosmWasm/wasmd/app/params"
 
-	"github.com/psangwoo/parsdk/x/wasm/keeper/wasmtesting"
-	"github.com/psangwoo/parsdk/x/wasm/types"
+	"github.com/CosmWasm/wasmd/x/wasm/keeper/wasmtesting"
+	"github.com/CosmWasm/wasmd/x/wasm/types"
 )
 
 var ModuleBasics = module.NewBasicManager(
